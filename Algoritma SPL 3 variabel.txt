@@ -1,0 +1,36 @@
+Nama		: M. Irfan Mubarok
+NIM		: 202511420111
+Matkul/Kelas	: Komputasi Numerik / C
+
+ALGORITMA EliminasiGauss
+INPUT  : matriks koefisien A (n×n), vektor konstanta b (n)
+OUTPUT : solusi tunggal (t, u, v), atau pesan "tidak ada solusi" / "tak hingga solusi"
+
+1.  Tetapkan n ← 3, toleransi ε ← 1e-9, nama variabel ← [t, u, v]
+2.  Bentuk matriks augmented M (n × (n+1)): M[i][1..n] ← A[i][1..n],  M[i][n+1] ← b[i]
+3.  r ← 1                                   // r = baris pivot yang sedang dicari
+4.  UNTUK j ← 1 SAMPAI n LAKUKAN            // j = kolom yang sedang dieliminasi (1=t, 2=u, 3=v)
+5.      p ← baris pertama dari r sampai n yang |M[p][j]| > ε
+6.      JIKA tidak ada baris seperti itu MAKA
+7.          LANJUT ke j berikutnya          // kolom j tidak punya pivot
+8.      JIKA p ≠ r MAKA
+9.          tukar baris p dengan baris r    // penanganan pivot nol
+10.     UNTUK i ← r+1 SAMPAI n LAKUKAN
+11.         m ← M[i][j] / M[r][j]
+12.         UNTUK k ← j SAMPAI n+1 LAKUKAN
+13.             M[i][k] ← M[i][k] − m × M[r][k]
+14.     r ← r + 1
+15. rank ← r − 1                            // jumlah baris pivot yang berhasil dibentuk
+16. UNTUK i ← rank+1 SAMPAI n LAKUKAN       // baris-baris yang koefisiennya semua nol
+17.     JIKA |M[i][n+1]| > ε MAKA
+18.         CETAK "SPL tidak memiliki solusi"; SELESAI
+19. JIKA rank < n MAKA
+20.     CETAK "SPL memiliki tak hingga banyak solusi"; SELESAI
+21. // rank = n → solusi tunggal, lanjut substitusi balik
+22. UNTUK i ← n TURUN SAMPAI 1 LAKUKAN      // i = 3 (v), 2 (u), 1 (t)
+23.     jumlah ← 0
+24.     UNTUK k ← i+1 SAMPAI n LAKUKAN
+25.         jumlah ← jumlah + M[i][k] × solusi[k]
+26.     solusi[i] ← (M[i][n+1] − jumlah) / M[i][i]
+27. CETAK t ← solusi[1], u ← solusi[2], v ← solusi[3]
+28. VALIDASI: hitung A·solusi lalu bandingkan dengan b

@@ -1,0 +1,133 @@
+TUGAS 1 : KOMPUTASI NUMERIK
+
+Nama	: M. Irfan Mubarok
+NIM	: 202511420111
+Kelas	: C
+
+
+Berikut adalah prompt yang saya gunakan untuk pengerjaan tugas 1 mata kuliah Komputasi Numerik menggunakan AI Claude model Sonnet 5.5.
+
+1. Prompt Pertama
+Saya melampirkan file tugas resmi dari dosen mata kuliah Komputasi Numerik.
+Jadikan file tersebut sebagai acuan utama dalam mengerjakan tugas. Baca dan pahami seluruh instruksi sebelum mulai memberikan jawaban.
+Ketentuan:
+
+1. Prioritaskan instruksi yang tertulis dalam file tugas.
+2. Jangan menambahkan metode, materi, atau pekerjaan yang tidak diminta dosen.
+3. Jika terdapat bagian yang belum jelas, tanyakan terlebih dahulu kepada saya.
+4. Pastikan hasil algoritma, kode Python, dan dokumentasi sesuai dengan tujuan tugas.
+5. Saya adalah mahasiswa Teknik Informatika semester 3. Gunakan penjelasan yang sesuai dengan tingkat pemahaman tersebut.
+
+Setelah membaca file, konfirmasikan pemahaman Anda mengenai tugas yang harus dikerjakan. Jangan langsung membuat algoritma sebelum saya memberikan persetujuan.
+
+Berperanlah sebagai dosen dan ahli Komputasi Numerik yang mampu membimbing mahasiswa Teknik Informatika semester 3. Saya sedang mengerjakan tugas mata kuliah Komputasi Numerik dengan topik Algoritma Penyelesaian Sistem Persamaan Linear (SPL) Tiga Variabel.
+A. Tujuan Pengerjaan
+Saya ingin menyusun algoritma penyelesaian SPL tiga variabel menggunakan metode Eliminasi Gauss, kemudian mengimplementasikannya ke dalam Python melalui Google Colab.
+Hasil pengerjaan akan digunakan untuk:
+
+1. Dokumen algoritma yang disimpan di GitHub.
+2. Program Python yang dijalankan melalui Google Colab.
+3. Dokumentasi penjelasan setiap baris kode atau cell.
+4. Bahan presentasi dan video penjelasan tugas.
+
+
+B. Ketentuan Pengerjaan
+
+1. Gunakan bahasa Indonesia yang jelas, sistematis, dan sesuai tingkat pemahaman mahasiswa Teknik Informatika semester 3.
+2. Susun penjelasan dengan gaya akademis yang wajar, tetapi tidak terlalu rumit.
+3. Gunakan metode Eliminasi Gauss secara konsisten dari penjelasan algoritma sampai implementasi Python.
+4. Jangan langsung menggunakan fungsi penyelesaian SPL otomatis seperti `numpy.linalg.solve()` sebagai inti program. Proses eliminasi harus diimplementasikan sendiri agar tahapan perhitungannya dapat dipahami.
+5. Gunakan contoh SPL tiga variabel yang dibuat secara mandiri dan memiliki solusi tunggal.
+6. Pastikan setiap perhitungan matematis benar dan dapat diverifikasi.
+7. Jangan menyalin contoh atau susunan penjelasan generik secara mentah. Buat penyajian yang memiliki karakteristik dan contoh tersendiri, tetapi tetap benar secara matematis.
+8. Jika terdapat asumsi atau keterbatasan metode, jelaskan secara terbuka.
+
+
+C. Tahap Pertama: Penyusunan Algoritma
+Untuk tahap pertama, buatlah:
+
+1. Penjelasan singkat mengenai SPL tiga variabel.
+2. Pengertian dan prinsip kerja metode Eliminasi Gauss.
+3. Contoh soal SPL tiga variabel beserta penyelesaiannya secara matematis.
+4. Pembentukan matriks augmented.
+5. Tahapan operasi baris elementer hingga terbentuk matriks segitiga atas.
+6. Tahapan substitusi balik untuk memperoleh nilai ketiga variabel.
+7. Algoritma dalam bentuk pseudocode yang sistematis.
+8. Penjelasan alur kerja algoritma dari awal hingga akhir.
+9. Deskripsi flowchart yang dapat digunakan untuk membuat diagram alir.
+
+Algoritma harus menjelaskan proses secara runtut, bukan hanya menyebutkan nama langkahnya.
+Setelah tahap pertama selesai, berhenti dan tunggu persetujuan saya. Jangan langsung membuat kode Python.
+
+D. Tahap Kedua: Implementasi Python
+Setelah saya menyetujui algoritma, buat implementasi Python berdasarkan algoritma tersebut.
+Program harus disusun dalam beberapa cell Google Colab dengan ketentuan:
+
+1. Setiap cell memiliki tujuan dan fungsi yang jelas.
+2. Cell dapat dijalankan satu per satu secara berurutan dari atas ke bawah.
+3. Variabel yang digunakan pada cell berikutnya harus sudah didefinisikan pada cell sebelumnya.
+4. Hindari ketergantungan terhadap cell yang belum dijalankan.
+5. Jangan menggabungkan seluruh program dalam satu cell.
+6. Berikan komentar kode dan penjelasan yang mudah dipahami.
+7. Tampilkan hasil perhitungan secara jelas dan terstruktur.
+
+Gunakan pembagian cell berikut sebagai acuan:
+
+* Cell 1: Judul program dan deskripsi metode.
+* Cell 2: Import library jika memang diperlukan.
+* Cell 3: Input koefisien dan konstanta persamaan.
+* Cell 4: Pembentukan matriks augmented.
+* Cell 5: Proses eliminasi Gauss.
+* Cell 6: Proses substitusi balik.
+* Cell 7: Menampilkan hasil akhir.
+* Cell 8: Validasi hasil dengan memasukkan kembali nilai variabel ke persamaan awal.
+
+Jika pembagian cell perlu disesuaikan, jelaskan alasannya terlebih dahulu.
+
+E. Penanganan Kondisi Khusus
+Pastikan program mempertimbangkan kondisi:
+
+* Pivot bernilai nol sehingga perlu pertukaran baris.
+* SPL tidak memiliki solusi tunggal.
+* SPL tidak memiliki solusi.
+* SPL memiliki tak hingga banyak solusi.
+
+Jelaskan penanganan kondisi tersebut sesuai kemampuan metode yang digunakan. Jangan memaksakan program menghasilkan tiga nilai variabel jika solusi tunggal tidak tersedia.
+
+F. Tahap Ketiga: Dokumentasi Kode
+Setelah kode selesai, buat penjelasan detail untuk setiap cell yang mencakup:
+
+* Tujuan cell.
+* Fungsi setiap variabel.
+* Fungsi setiap perintah atau baris kode.
+* Hubungan cell tersebut dengan proses Eliminasi Gauss.
+* Hasil yang diharapkan setelah cell dijalankan.
+
+Penjelasan harus membantu mahasiswa memahami program dan mampu menerangkannya secara mandiri.
+
+G. Pemeriksaan Akhir
+Sebelum menyatakan hasil selesai:
+
+1. Periksa kesesuaian algoritma dengan kode Python.
+2. Periksa kebenaran operasi matematis.
+3. Periksa urutan eksekusi setiap cell.
+4. Pastikan hasil program sesuai dengan penyelesaian manual.
+5. Berikan contoh pengujian dan hasil yang diharapkan.
+6. Jika ditemukan kesalahan, tunjukkan letak kesalahan dan perbaikannya.
+
+PENTING: Jangan mengerjakan semua tahap sekaligus. Mulai dari Tahap Pertama, yaitu penyusunan algoritma. Tunggu persetujuan saya sebelum melanjutkan ke tahap berikutnya.
+
+2. Prompt Kedua
+boleh langsung susun Tahap 1
+
+3. Prompt Ketiga
+ganti variabel x,y,z menjadi t,u,v. Setelah itu lanjutkan ke Tahap 2
+
+4. Prompt Keempat
+buat tiap cell (code) memiliki penjelasan berupa cell (teks) dibagian bawah cell (code), penjelasan dipisah, jadi cell (code) hanay berisi code dan command (#....)
+
+5. Prompt Kelima
+Lanjutkan
+
+6. Prompt Keenam
+buatkan ulang pada bagian yang terdampak di kesalahan 1. meliputi Contoh soal dan penyelesaian manual, Pesudocode,  Alur Kerja, dan Flowchart
